@@ -16,7 +16,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://m.facebook.com/events*", "https://safe-woodland-63868.herokuapp.com/index.html", "https://limitless-thicket-14246.herokuapp.com/index.html"],
+      "matches": ["https://m.facebook.com/events*", "https://safe-woodland-63868.herokuapp.com/*", "https://limitless-thicket-14246.herokuapp.com/*"],
       "js": ["content.js"],
       "run_at": "document_end"
     }
