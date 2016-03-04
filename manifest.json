@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Extenstion for Newsposter",
+  "description": "Extenstion for Newsposter",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+	"default_popup": "popupFacebook.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://m.facebook.com/events*", "https://safe-woodland-63868.herokuapp.com/index.html", "https://limitless-thicket-14246.herokuapp.com/index.html"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": ["inject.js"]
+}
